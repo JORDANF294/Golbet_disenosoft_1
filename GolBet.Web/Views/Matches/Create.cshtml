@@ -1,0 +1,14 @@
+@model GolBet.Services.DTOs.MatchFormDto
+
+@{
+    ViewData["Title"] = "Nuevo Partido";
+}
+
+<h2>Nuevo Partido</h2>
+<hr />
+
+<partial name="_MatchForm" model="Model" />
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
